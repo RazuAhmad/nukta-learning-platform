@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import applogo from "../../../public/assets/nav-logo.svg";
 import Image from "next/image";
 import Link from "next/link";
-import CustomButton from "../customButton/page";
+import CustomButton from "../customButton/customButton";
 
 const Navbar = () => {
   function MobileNavLink({ children, href, ...props }) {

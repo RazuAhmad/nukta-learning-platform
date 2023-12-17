@@ -9,13 +9,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import applogo from "../../../public/assets/nav-logo.svg";
 import Image from "next/image";
 import Link from "next/link";
+import CustomButton from "../customButton/page";
 
 const Navbar = () => {
   function MobileNavLink({ children, href, ...props }) {
     return (
       <Popover.Button
         href={href}
-        className="block text-base leading-7 tracking-tight text-gray-700"
+        className="block text-base leading-7 tracking-tight text-white"
         {...props}
       >
         <a href={href}> {children}</a>
@@ -27,7 +28,7 @@ const Navbar = () => {
     <nav>
       <div
         className="max-w-[1440px]
-mx-auto py-8 px-4 relative z-50 bg-customBackground"
+mx-auto py-5 px-4 relative z-50 bg-customBackground"
       >
         <div className="flex justify-between items-center">
           {/* Nav logo */}
@@ -45,26 +46,26 @@ mx-auto py-8 px-4 relative z-50 bg-customBackground"
           <div className="hidden lg:flex justify-between items-center sm:gap-4 md:gap-8 ">
             <a
               href="#services"
-              className="cursor-pointer no-underline text-gray-700"
+              className="cursor-pointer no-underline text-white"
             >
               Services
             </a>
             <a
               href="#testimonials"
-              className="cursor-pointer no-underline text-gray-700"
+              className="cursor-pointer no-underline text-white"
             >
               Testimonials
             </a>
             <a
               href="#ourCollection"
-              className="cursor-pointer no-underline text-gray-700"
+              className="cursor-pointer no-underline text-white"
             >
               Our Collection
             </a>
 
             <a
               href="#aboutUs"
-              className="cursor-pointer no-underline text-gray-700"
+              className="cursor-pointer no-underline text-white"
             >
               About Us
             </a>
@@ -84,6 +85,7 @@ mx-auto py-8 px-4 relative z-50 bg-customBackground"
                         // <ChevronUpIcon className="h-6 w-6" />
                         <Icon
                           icon="carbon:close-filled"
+                          color="white"
                           width="45px"
                           height="45px"
                         />
@@ -91,6 +93,7 @@ mx-auto py-8 px-4 relative z-50 bg-customBackground"
                         // <MenuIcon className="h-6 w-6" />
 
                         <Icon
+                          color="white"
                           width="45px"
                           height="45px"
                           icon="ion:reorder-three-outline"
@@ -119,9 +122,9 @@ mx-auto py-8 px-4 relative z-50 bg-customBackground"
                             y: -32,
                             transition: { duration: 0.2 },
                           }}
-                          className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
+                          className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-customBackground px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
                         >
-                          <div className="space-y-4">
+                          <div className="space-y-4 ">
                             <MobileNavLink href="#services">
                               Services
                             </MobileNavLink>
@@ -139,12 +142,12 @@ mx-auto py-8 px-4 relative z-50 bg-customBackground"
                             <div className="flex flex-col gap-3">
                               <div>
                                 <MobileNavLink href="#logIn">
-                                  {/* <CustomButton
+                                  <CustomButton
                                     href="/#login"
                                     className="px-[11px] py-[7px]  border-solid border-[1px] rounded-lg cursor-pointer"
                                   >
                                     Log in
-                                  </CustomButton> */}
+                                  </CustomButton>
                                 </MobileNavLink>
                               </div>
                               <div>
@@ -164,20 +167,20 @@ mx-auto py-8 px-4 relative z-50 bg-customBackground"
               )}
             </Popover>
 
-            {/* <CustomButton
+            <CustomButton
               href="#login"
               className="hidden lg:block px-[11px] py-[7px] border-gray-600 border-solid border-[1px] rounded-lg cursor-pointer"
             >
               Login
-            </CustomButton> */}
+            </CustomButton>
 
-            {/* <CustomButton
+            <CustomButton
               href="#downloadOurApp"
               variant="contained"
-              className="hidden lg:block px-[12px] py-[8px] rounded-lg bg-black text-white"
+              className="hidden lg:block px-[12px] py-[8px] rounded-lg  text-white"
             >
-              Download Our App
-            </CustomButton> */}
+              Download App
+            </CustomButton>
           </div>
         </div>
       </div>

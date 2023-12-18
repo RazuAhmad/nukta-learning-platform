@@ -5,11 +5,11 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import { Popover } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
-// import CustomButton from "../CustomButton/CustomButton";
 import applogo from "../../../public/assets/nav-logo.svg";
 import Image from "next/image";
 import Link from "next/link";
-import CustomButton from "../customButton/customButton";
+
+import { Button } from "@mui/material";
 
 const Navbar = () => {
   function MobileNavLink({ children, href, ...props }) {
@@ -142,12 +142,12 @@ mx-auto py-5 px-4 relative z-50 bg-customBackground"
                             <div className="flex flex-col gap-3">
                               <div>
                                 <MobileNavLink href="#logIn">
-                                  <CustomButton
+                                  <Button
                                     href="/#login"
                                     className="px-[11px] py-[7px]  border-solid border-[1px] rounded-lg cursor-pointer"
                                   >
                                     Log in
-                                  </CustomButton>
+                                  </Button>
                                 </MobileNavLink>
                               </div>
                               <div>
@@ -167,12 +167,9 @@ mx-auto py-5 px-4 relative z-50 bg-customBackground"
               )}
             </Popover>
 
-            <CustomButton
-              href="#login"
-              className="hidden lg:block px-[11px] py-[7px] border-gray-600 border-solid border-[1px] rounded-lg cursor-pointer"
-            >
+            <Button className="hidden lg:block px-[11px] py-[7px] border-gray-600 border-solid border-[1px] rounded-lg cursor-pointer">
               Login
-            </CustomButton>
+            </Button>
           </div>
         </div>
       </div>

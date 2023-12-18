@@ -173,14 +173,6 @@ mx-auto py-5 px-4 relative z-50 bg-customBackground"
             >
               Login
             </CustomButton>
-
-            <CustomButton
-              href="#downloadOurApp"
-              variant="contained"
-              className="hidden lg:block px-[12px] py-[8px] rounded-lg  text-white"
-            >
-              Download App
-            </CustomButton>
           </div>
         </div>
       </div>

@@ -6,7 +6,10 @@ import cardImg3 from "../../../public/assets/card-img-3.jpg";
 
 const AllCourses = () => {
   return (
-    <div className="flex flex-col items-center md:flex-row gap-[25px] justify-center mt-12 mb-12">
+    <div
+      className="flex flex-col items-center gap-8 md:flex-row md:gap-[25px] justify-center mt-12 mb-12"
+      id="allCourses"
+    >
       <CustomCard
         imgSrc={cardImg1}
         title="This is a one line title"

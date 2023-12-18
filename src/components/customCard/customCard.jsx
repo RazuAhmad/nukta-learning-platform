@@ -28,30 +28,30 @@ export const CustomCard = ({
           style={{ width: "100%", height: "157px", marginBottom: "10px" }}
           alt="course-img"
         />
-        <div className="">
-          <h1 className=" text-[#1E1E1E] font-medium text-xl mb-[6px]">
-            {title}
-          </h1>
-          <p className="mb-[10px]">{subtitle}</p>
+        <div>
+          <div className=" px-[10px]">
+            <h1 className=" text-[#1E1E1E] font-medium text-xl mb-[6px]">
+              {title}
+            </h1>
+            <p className="mb-[10px]">{subtitle}</p>
 
-          {/* Price segment */}
-          <div
-            className={
-              isFree
-                ? `flex justify-between px-[10px] pb-[10px] border-b-2`
-                : ` px-[10px] pb-[10px] border-b-4`
-            }
-          >
-            {isFree && <p className="line-through">{prevAmount}</p>}
-            <p className="">{currentAmount}</p>
+            {/* Price segment */}
+            <div
+              className={
+                isFree ? `flex justify-between  pb-[10px] ` : `  pb-[10px] `
+              }
+            >
+              {isFree && <p className="line-through">{prevAmount}</p>}
+              <p className="">{currentAmount}</p>
 
-            {isFree && (
-              <p className="bg-[rgb(149,227,227)] rounded-3xl px-1 ">
-                You Save {saveAmount}
-              </p>
-            )}
+              {isFree && (
+                <p className="bg-[rgb(149,227,227)] rounded-3xl px-1 ">
+                  You Save {saveAmount}
+                </p>
+              )}
+            </div>
           </div>
-
+          <p className="h-[1px] bg-gray-300"></p>
           {/* course details */}
           <div className="flex items-center gap-[11px] px-[10px] py-[10px]">
             {/* duration */}

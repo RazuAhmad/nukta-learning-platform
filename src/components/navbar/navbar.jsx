@@ -86,16 +86,16 @@ mx-auto py-5 px-4 relative z-50 bg-customBackground"
                         <Icon
                           icon="carbon:close-filled"
                           color="white"
-                          width="45px"
-                          height="45px"
+                          width="35px"
+                          height="35px"
                         />
                       ) : (
                         // <MenuIcon className="h-6 w-6" />
 
                         <Icon
                           color="white"
-                          width="45px"
-                          height="45px"
+                          width="35px"
+                          height="35px"
                           icon="ion:reorder-three-outline"
                         />
                       )

@@ -45,10 +45,10 @@ mx-auto py-5 px-4 relative z-50 bg-customBackground"
           {/*all Nav Links are here */}
           <div className="hidden lg:flex justify-between items-center sm:gap-4 md:gap-8 ">
             <a
-              href="#services"
+              href="#allCourses"
               className="cursor-pointer no-underline text-white"
             >
-              Services
+              All Courses
             </a>
             <a
               href="#testimonials"
@@ -125,8 +125,8 @@ mx-auto py-5 px-4 relative z-50 bg-customBackground"
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-customBackground px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4 ">
-                            <MobileNavLink href="#services">
-                              Services
+                            <MobileNavLink href="#allCourses">
+                              All Courses
                             </MobileNavLink>
                             <MobileNavLink href="#testimonials">
                               Testimonials

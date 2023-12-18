@@ -22,7 +22,12 @@ export const CustomCard = ({
       </h1>
 
       {/* Main card  */}
-      <div className=" shadow-lg rounded-lg">
+      <div
+        className=" shadow-lg rounded-lg
+        transition-transform transform hover:scale-105
+        hover:cursor-pointer
+      "
+      >
         <Image
           src={imgSrc}
           style={{ width: "100%", height: "157px", marginBottom: "10px" }}
